@@ -29,7 +29,7 @@ pipeline {
         
         stage('Deploy local') {
     		steps {
-        		bat 'copy target\\*.war C:\\tmp\\appoggio\\'
+        		bat 'copy target\\*.jar C:\\tmp\\appoggio\\'
     }
 }
         
