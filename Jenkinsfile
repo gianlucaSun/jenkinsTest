@@ -26,6 +26,13 @@ pipeline {
                 bat 'mvn package'
             }
         }
+        
+        stage('Deploy local') {
+    		steps {
+        		bat 'copy target\\*.war C:\\tmp\\appoggio\\'
+    }
+}
+        
     }
 
     post {
