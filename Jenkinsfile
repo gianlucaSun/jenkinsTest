@@ -1,15 +1,10 @@
 pipeline {
-    agent {
-        docker {
-            image 'maven:3.9.14-eclipse-temurin-21-alpine'
-        }
-    }
+    agent any
 
     stages {
 
         stage('Checkout') {
             steps {
-                // scarica il codice dal repository
                 checkout scm
             }
         }
